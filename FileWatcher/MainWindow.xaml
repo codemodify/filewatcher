@@ -1,0 +1,36 @@
+﻿<Window x:Class="FilWatcher.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="File Watcher" Height="326" Width="594"
+    AllowDrop="True">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="278*" />
+        </Grid.ColumnDefinitions>
+
+        <Menu Name="mainMenu" Height="24" VerticalAlignment="Top" Grid.Column="1" Background="White">
+
+            <MenuItem Click="SettingsClick" Width="25" Height="25" ToolTip="Help Me !">
+                <MenuItem.Icon>
+                    <Image Source="images/settings.png" Width="16" Height="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+
+            <MenuItem Click="OpenClick" Width="26" Height="25" ToolTip="Open File">
+                <MenuItem.Icon>
+                    <Image Source="images/openfile.png" Width="16" Height="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+
+            <MenuItem Click="CloseClick" Width="26" Height="25" ToolTip="Open File">
+                <MenuItem.Icon>
+                    <Image Source="images/closefile.png" Width="16" Height="16" />
+                </MenuItem.Icon>
+            </MenuItem>
+        </Menu>
+
+        <TabControl Name="tabControl" Grid.Column="1" Margin="0,24,0,0" />
+
+    </Grid>
+</Window>
